@@ -151,14 +151,14 @@ flowchart TD
 **用户级**（推荐，任何项目都能用）：
 
 ```bash
-git clone https://github.com/YTZ-create/migrate-conversations-to-qoder.git /tmp/mc
+git clone https://github.com/YTZ-create/migrate-conversations.git /tmp/mc
 # macOS / Linux
 cp -r /tmp/mc/migrate-conversations-to-qoder ~/.qoder-cn/skills/
 ```
 
 ```powershell
 # Windows PowerShell
-git clone https://github.com/YTZ-create/migrate-conversations-to-qoder.git "$env:TEMP\mc"
+git clone https://github.com/YTZ-create/migrate-conversations.git "$env:TEMP\mc"
 Copy-Item -Recurse -Force "$env:TEMP\mc\migrate-conversations-to-qoder" "$env:USERPROFILE\.qoder-cn\skills\"
 ```
 

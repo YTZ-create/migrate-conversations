@@ -98,13 +98,13 @@ flowchart LR
 Trae 技能放在项目的 `.trae/skills/` 下（项目级）：
 
 ```bash
-git clone https://github.com/YTZ-create/migrate-conversations-to-qoder.git /tmp/mc
+git clone https://github.com/YTZ-create/migrate-conversations.git /tmp/mc
 cp -r /tmp/mc/migrate-conversations-to-trae <你的项目>/.trae/skills/
 ```
 
 ```powershell
 # Windows PowerShell
-git clone https://github.com/YTZ-create/migrate-conversations-to-qoder.git "$env:TEMP\mc"
+git clone https://github.com/YTZ-create/migrate-conversations.git "$env:TEMP\mc"
 Copy-Item -Recurse -Force "$env:TEMP\mc\migrate-conversations-to-trae" "<你的项目>\.trae\skills\"
 ```
 

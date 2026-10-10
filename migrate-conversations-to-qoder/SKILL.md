@@ -84,8 +84,8 @@ argument-hint: <GitHub URL 或项目名> | <导出目录> [索引文件]
 ### Step A1 · 提取搜索关键词
 
 从用户输入中提取：
-- **完整 URL**（如 `https://github.com/YTZ-create/migrate-conversations-to-qoder`）
-- **仓库名**（如 `migrate-conversations-to-qoder`）
+- **完整 URL**（如 `https://github.com/YTZ-create/migrate-conversations`）
+- **仓库名**（如 `migrate-conversations`）
 - **所有者**（如 `YTZ-create`）
 - **当前工作区绝对路径**（Qoder 打开的文件夹，如 `C:\Users\xxx\Desktop\OpenClaw`）
 - **工作区文件夹名**（路径最后一段，如 `OpenClaw`）

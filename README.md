@@ -52,7 +52,7 @@ flowchart LR
 ### 迁进 Qoder
 
 ```bash
-git clone https://github.com/YTZ-create/migrate-conversations-to-qoder.git /tmp/mc
+git clone https://github.com/YTZ-create/migrate-conversations.git /tmp/mc
 # 用户级
 cp -r /tmp/mc/migrate-conversations-to-qoder ~/.qoder-cn/skills/
 # 项目级：目标换成 <你的项目>/.qoder/skills/
@@ -60,20 +60,20 @@ cp -r /tmp/mc/migrate-conversations-to-qoder ~/.qoder-cn/skills/
 
 ```powershell
 # Windows PowerShell
-git clone https://github.com/YTZ-create/migrate-conversations-to-qoder.git "$env:TEMP\mc"
+git clone https://github.com/YTZ-create/migrate-conversations.git "$env:TEMP\mc"
 Copy-Item -Recurse -Force "$env:TEMP\mc\migrate-conversations-to-qoder" "$env:USERPROFILE\.qoder-cn\skills\"
 ```
 
 ### 迁进 Trae
 
 ```bash
-git clone https://github.com/YTZ-create/migrate-conversations-to-qoder.git /tmp/mc
+git clone https://github.com/YTZ-create/migrate-conversations.git /tmp/mc
 cp -r /tmp/mc/migrate-conversations-to-trae <你的项目>/.trae/skills/
 ```
 
 ```powershell
 # Windows PowerShell
-git clone https://github.com/YTZ-create/migrate-conversations-to-qoder.git "$env:TEMP\mc"
+git clone https://github.com/YTZ-create/migrate-conversations.git "$env:TEMP\mc"
 Copy-Item -Recurse -Force "$env:TEMP\mc\migrate-conversations-to-trae" "<你的项目>\.trae\skills\"
 ```
 
