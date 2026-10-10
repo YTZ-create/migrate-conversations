@@ -124,7 +124,7 @@ python "scripts/trae_migrate.py" export --out-dir ".trae-import" --pick "1,2,5"
 ```
 
 Windows 上若无系统 Python，可用 Trae 内置解释器：
-`%APPDATA%\TRAE SOLO CN\ModularData\ai-agent\vm\tools\python\python.exe`。
+`%APPDATA%\<Trae CN 或 TRAE SOLO CN>\ModularData\ai-agent\vm\tools\python\python.exe`。
 
 ## 触发方式
 
