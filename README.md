@@ -41,18 +41,9 @@ flowchart LR
 
 ## 支持的 AI 工具（来源）
 
-| 类别 | 工具 |
-|---|---|
-| AI 编辑器 | Qoder、Cursor、Windsurf |
-| 本地 CLI | Claude Code、Codex CLI、Gemini CLI、Kimi Code、Copilot CLI |
-| 桌面应用 | 豆包 Doubao、Chatbox、MiMo 小米、Marvis 腾讯、LM Studio |
-| 智能体 / 轨迹 | OpenClaw、ZCode |
-| 编辑器插件 | VS Code Copilot Chat |
-| 官方导出 | ChatGPT、Claude Web（需先在官方设置导出 `conversations.json` 放到 Downloads） |
+共 **17 类**来源，两个 skill 共用同一套探测能力：**Qoder 版**覆盖 13 类，**Trae 版**覆盖全部 17 类。
 
-> Qoder 版覆盖其中 13 类；Trae 版覆盖全部 17 类。
-
-**不支持**：Trae 会话本身（SQLCipher 加密，读不出）、Perplexity / 文心一言 / 通义千问（无本地结构化数据）。
+完整清单、不支持项与逐来源细节 → **[SOURCES.md](./SOURCES.md)**
 
 ## 安装
 
