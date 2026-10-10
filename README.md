@@ -12,6 +12,8 @@
 
 </div>
 
+> 💡 如果看不懂文档里的使用方法，直接把这个网址 **https://github.com/YTZ-create/migrate-conversations** 丢给你想导入的那个 AI，让它告诉你怎么做就好。
+
 这是一族**平级**的技能，每个只负责一个目标工具：
 
 | | 🟦 迁进 Qoder | 🟩 迁进 Trae |
