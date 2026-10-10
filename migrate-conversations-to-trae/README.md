@@ -90,7 +90,7 @@ flowchart LR
 
 ## 支持的 AI 工具（17 类）
 
-覆盖 **17 类**本地 AI 工具。完整清单与不支持项见 **[../SOURCES.md](../SOURCES.md)**；
+覆盖 **17 类**本地 AI 工具。逐工具的版本对照矩阵与不支持项见 **[../SOURCES.md](../SOURCES.md)**；
 本 skill 逐来源的路径、字段与可靠性分级见 [references/sources.md](./references/sources.md)。
 
 ## 安装

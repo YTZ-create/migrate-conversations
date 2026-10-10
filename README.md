@@ -21,7 +21,7 @@
 | 自动化程度 | 全自动建会话（近乎一键） | 扫描/导出全自动；**建会话需手动粘贴** |
 | 依赖 | Qoder 内置 `create_chat_session` 等 4 个工具 | Python 3（仅标准库） |
 | 建会话方式 | 程序化创建（不可逆，建错只能在 UI 删） | 生成种子提示词，你在 UI 新建会话粘贴 |
-| 支持来源 | 13 类 | **17 类**（多出 Marvis / LM Studio / OpenClaw / ZCode / Copilot Chat） |
+| 支持来源 | 13 类 | **17 类**（多出 Qoder 本身 / Marvis / LM Studio / OpenClaw / ZCode / Copilot Chat；两者各有对方没有的来源） |
 
 ## 怎么选
 
@@ -41,9 +41,9 @@ flowchart LR
 
 ## 支持的 AI 工具（来源）
 
-共 **17 类**来源，两个 skill 共用同一套探测能力：**Qoder 版**覆盖 13 类，**Trae 版**覆盖全部 17 类。
+两个版本各自支持的来源**并不完全相同**：**Qoder 版 13 类**、**Trae 版 17 类**（各有对方没有的来源）。
 
-完整清单、不支持项与逐来源细节 → **[SOURCES.md](./SOURCES.md)**
+**逐工具的版本对照矩阵**、不支持项与细节 → **[SOURCES.md](./SOURCES.md)**
 
 ## 安装
 
