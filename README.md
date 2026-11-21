@@ -19,7 +19,7 @@
 | | 🟦 迁进 Qoder | 🟩 迁进 Trae |
 |---|---|---|
 | 目录 | [migrate-conversations-to-qoder/](./migrate-conversations-to-qoder/) | [migrate-conversations-to-trae/](./migrate-conversations-to-trae/) |
-| 运行环境 | **仅 Qoder** | **Trae**（含 Trae SOLO CN） |
+| 运行环境 | **仅 Qoder** | **Trae**（新版 `Trae CN`、旧版 `TRAE SOLO CN`） |
 | 自动化程度 | 全自动建会话（近乎一键） | 扫描/导出全自动；**建会话需手动粘贴** |
 | 依赖 | Qoder 内置 `create_chat_session` 等 4 个工具 | Python 3（仅标准库） |
 | 建会话方式 | 程序化创建（不可逆，建错只能在 UI 删） | 生成种子提示词，你在 UI 新建会话粘贴 |
@@ -70,13 +70,18 @@ Copy-Item -Recurse -Force "$env:TEMP\mc\migrate-conversations-to-qoder" "$env:US
 
 ```bash
 git clone https://github.com/YTZ-create/migrate-conversations.git /tmp/mc
+# 项目级
 cp -r /tmp/mc/migrate-conversations-to-trae <你的项目>/.trae/skills/
+# 用户级（对所有项目生效）：目标换成 ~/.trae-cn/skills/
 ```
 
 ```powershell
 # Windows PowerShell
 git clone https://github.com/YTZ-create/migrate-conversations.git "$env:TEMP\mc"
+# 项目级
 Copy-Item -Recurse -Force "$env:TEMP\mc\migrate-conversations-to-trae" "<你的项目>\.trae\skills\"
+# 用户级（对所有项目生效）
+Copy-Item -Recurse -Force "$env:TEMP\mc\migrate-conversations-to-trae" "$env:USERPROFILE\.trae-cn\skills\"
 ```
 
 装好后：Qoder 执行 `/skills reload`（或重启会话）；Trae 重开一个对话即可识别。

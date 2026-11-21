@@ -95,17 +95,22 @@ flowchart LR
 
 ## 安装
 
-Trae 技能放在项目的 `.trae/skills/` 下（项目级）：
+Trae 技能放在项目的 `.trae/skills/` 下（项目级）；也可放到用户级 `%USERPROFILE%\.trae-cn\skills\`（对所有项目生效）：
 
 ```bash
 git clone https://github.com/YTZ-create/migrate-conversations.git /tmp/mc
+# 项目级
 cp -r /tmp/mc/migrate-conversations-to-trae <你的项目>/.trae/skills/
+# 用户级：目标换成 ~/.trae-cn/skills/
 ```
 
 ```powershell
 # Windows PowerShell
 git clone https://github.com/YTZ-create/migrate-conversations.git "$env:TEMP\mc"
+# 项目级
 Copy-Item -Recurse -Force "$env:TEMP\mc\migrate-conversations-to-trae" "<你的项目>\.trae\skills\"
+# 用户级
+Copy-Item -Recurse -Force "$env:TEMP\mc\migrate-conversations-to-trae" "$env:USERPROFILE\.trae-cn\skills\"
 ```
 
 装好后重开一个对话即可识别。脚本只用 Python 标准库，无需安装依赖。
@@ -123,8 +128,7 @@ python "scripts/trae_migrate.py" export --out-dir ".trae-import" --pick "1,2,5"
 --source "Cursor,Claude"  # 只看指定来源
 ```
 
-Windows 上若无系统 Python，可用 Trae 内置解释器：
-`%APPDATA%\<Trae CN 或 TRAE SOLO CN>\ModularData\ai-agent\vm\tools\python\python.exe`。
+Windows 上若无系统 Python，自行安装一个 Python 3 即可（新版 TRAE 已不再自带内置解释器）。
 
 ## 触发方式
 

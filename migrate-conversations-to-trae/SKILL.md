@@ -53,9 +53,8 @@ Trae 自身的会话库也是 SQLCipher 加密的（既读不出也写不进）�
 
 ## 前置自检（开跑前必须做）
 
-1. **确认 Python 可用**。优先系统 `python` / `python3`；Windows 上若没有，用 Trae 内置的解释器：
-   `%APPDATA%\<Trae CN 或 TRAE SOLO CN>\ModularData\ai-agent\vm\tools\python\python.exe`。
-   脚本只用标准库，无需安装依赖。
+1. **确认 Python 可用**（系统 `python` / `python3` 即可）。脚本只用标准库，无需安装依赖；
+   若机器上没有 Python 3，让用户自行安装一个（新版 TRAE 已不再自带内置解释器）。
 2. **确认目标项目标识**。用户给的是 GitHub URL / 仓库名 / 项目文件夹名 / 本地路径，任一即可。
    用户没说就根据当前打开的工程名推断，或直接问。
 3. **确认输出目录**。默认放在当前工程下的 `.trae-import/`。

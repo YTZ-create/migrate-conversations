@@ -92,5 +92,5 @@
 ## 为什么不能像 Qoder 版那样自动建会话
 
 Qoder 版依赖 Qoder 内置的 `create_chat_session` / `list_chat_sessions` / `read_chat_session` / `wait_chat_sessions`。
-Trae 没有这组工具，CLI（`bin/trae-solo-cn.cmd` → VSCode `cli.js`）也只支持打开文件 / 装扩展，不带建会话命令。
+Trae 没有这组工具，CLI（新版 `bin/trae-cn.cmd`、旧版 `bin/trae-solo-cn.cmd` → VSCode `cli.js`）也只支持打开文件 / 装扩展，不带建会话命令。
 因此"新建会话"这一步只能由用户在界面上完成——这是环境限制，不是本技能可以绕过的。
